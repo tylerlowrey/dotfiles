@@ -1,0 +1,13 @@
+syntax on
+set tabstop=4
+set shiftwidth=4
+set softtabstop=0 noexpandtab
+set background=dark
+set backspace=indent,eol,start
+set number
+
+inoremap { {}<ESC>ha 
+inoremap jj <ESC>
+
+highlight LineNr ctermfg=white ctermbg=darkgrey
+highlight Comment term=bold ctermfg=5 guifg=#E178E4
