@@ -34,7 +34,6 @@ set background=dark
 set backspace=indent,eol,start
 set number
 
-inoremap { {}<ESC>ha 
 inoremap jj <ESC>
 
 highlight LineNr ctermfg=white ctermbg=darkgrey
