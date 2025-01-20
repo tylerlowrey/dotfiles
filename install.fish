@@ -1,3 +1,4 @@
+#!/usr/local/bin/fish
 cd nvim-rs
 cargo build --release
 cd ..
@@ -6,4 +7,4 @@ cp -rf nvim-rs/target/release/libnvim_rs.dylib $HOME/.config/nvim-rs/lua/nvim_rs
 cp -rf nvim-rs/target/release/libnvim_rs.so $HOME/.config/nvim-rs/lua/nvim_rs.so
 mkdir -p $HOME/.config/nvim
 cp -rf .config/nvim/* $HOME/.config/nvim
-#cp -rf .zshrc $HOME/.zshrc
+cp -rf .config/fish/* $HOME/.config/fish

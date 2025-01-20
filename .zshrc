@@ -7,3 +7,4 @@ elif [[ "$TERM_PROGRAM" == "Apple_Terminal" ]]; then
 	export PROMPT="┌─[%F{blue}%D{%Y-%m-%d} %D{%H:%M:%S}%f]─{%F{white}%n%f}─[%F{cyan}%~%f] ${NEWLINE}└%F{red}>%f "
 fi
 
+eval "$(jenv init -)"
