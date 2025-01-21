@@ -1,0 +1,41 @@
+return {
+  {
+    "mrcjkb/rustaceanvim",
+    version = "^5",
+    lazy = false,
+  },
+  -- { import = "lazyvim.plugins.extras.lang.typescript" },
+  -- add more treesitter parsers
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {
+        "bash",
+        "html",
+        "javascript",
+        "json",
+        "lua",
+        "markdown",
+        "markdown_inline",
+        "python",
+        "query",
+        "regex",
+        "tsx",
+        "typescript",
+        "vim",
+        "yaml",
+        "terraform",
+        "hcl",
+        "rust",
+        "ron",
+        "go",
+        "gomod",
+        "gowork",
+        "gosum",
+        "java",
+        "kotlin",
+        "php",
+      },
+    },
+  },
+}

@@ -1,6 +1,11 @@
 set PATH $HOME/.jenv/bin $PATH
-status --is-interactive; and jenv init - | source
+if type -q jenv
+    status --is-interactive; and jenv init - | source
+end
+
 set PATH $PATH $HOME/.cargo/bin
+set PATH $PATH $HOME/_dev/_bin
+set PATH $PATH $HOME/_dev/_bin/google-cloud-sdk/bin
 
 function fish_prompt
     set -l time (date +%H:%M:%S)
@@ -10,3 +15,5 @@ function fish_prompt
         (set_color E49BFF) (prompt_pwd -D 20) (set_color normal) \
         (set_color EC8305) (set_color normal)
 end
+
+source /usr/local/opt/asdf/libexec/asdf.fish

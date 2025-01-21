@@ -12,6 +12,13 @@ Use the update.* script to perform updates to an already setup environment
 
 The following dependencies need to be installed in order for everything to work as expected
 
-- [nvm](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating)
+- rust-analyzer (Must be somewhere on the PATH)
+- [asdf](https://asdf-vm.com/guide/getting-started.html)
 - [mermaid-cli](https://github.com/mermaid-js/mermaid-cli?tab=readme-ov-file#installation) 
 `npm install -g @mermaid-js/mermaid-cli`
+
+## Fonts
+
+I use [nerdfonts.com](https://www.nerdfonts.com/font-downloads) for my fonts. Here is the list of fonts from there that I like:
+
+- EnvyCodeR
