@@ -1,3 +1,5 @@
+set fish_greeting
+
 set PATH $HOME/.jenv/bin $PATH
 if type -q jenv
     status --is-interactive; and jenv init - | source
