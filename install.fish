@@ -1,4 +1,4 @@
-#!/usr/local/bin/fish
+#!/usr/bin/env fish
 cd nvim-rs
 cargo build --release
 cd ..
