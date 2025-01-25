@@ -12,7 +12,9 @@ Use the update.* script to perform updates to an already setup environment
 
 The following dependencies need to be installed in order for everything to work as expected
 
-- rust-analyzer (Must be somewhere on the PATH)
+- rust standard library sources
+`rustup component add rust-src`
+- rust-analyzer (Must be somewhere on the PATH, should be installed by install.fish)
 - [asdf](https://asdf-vm.com/guide/getting-started.html)
 - [mermaid-cli](https://github.com/mermaid-js/mermaid-cli?tab=readme-ov-file#installation) 
 `npm install -g @mermaid-js/mermaid-cli`

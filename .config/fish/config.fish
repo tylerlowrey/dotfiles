@@ -5,7 +5,6 @@ if type -q jenv
     status --is-interactive; and jenv init - | source
 end
 
-set PATH $PATH $HOME/.cargo/bin
 set PATH $PATH $HOME/_dev/_bin
 set PATH $PATH $HOME/_dev/_bin/google-cloud-sdk/bin
 
@@ -25,3 +24,6 @@ if test (uname -s) = Darwin
 else
     source ~/.asdf/asdf.fish
 end
+
+# Must be after PATH to rust-analyzer
+set PATH $PATH $HOME/.cargo/bin
