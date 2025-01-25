@@ -6,6 +6,7 @@ Also contains a nvim-rs directory, which is a rust library using nvim-oxi to con
 
 ## How to use
 Use the install.* script to perform initial setup
+
 Use the update.* script to perform updates to an already setup environment
 
 ## Dependencies
