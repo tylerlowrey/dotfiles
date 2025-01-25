@@ -1,7 +1,9 @@
 #!/usr/bin/env fish
 
+rm ~/.cargo/bin/rust-analyzer
 if not type -q rust-analyzer
     set -l operating_system (uname)
+    mkdir -p ~/_dev/_bin
     switch (uname)
         case Darwin
             curl -L https://github.com/rust-lang/rust-analyzer/releases/latest/download/rust-analyzer-x86_64-apple-darwin.gz \
@@ -10,6 +12,7 @@ if not type -q rust-analyzer
             curl -L https://github.com/rust-lang/rust-analyzer/releases/latest/download/rust-analyzer-x86_64-unknown-linux-gnu.gz \
                 | gunzip -c - >~/_dev/_bin/rust-analyzer
     end
+    chmod +x ~/_dev/_bin/rust-analyzer
 end
 
 cd nvim-rs
