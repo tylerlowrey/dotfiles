@@ -19,6 +19,8 @@ The following dependencies need to be installed in order for everything to work 
 - [asdf](https://asdf-vm.com/guide/getting-started.html)
 - [mermaid-cli](https://github.com/mermaid-js/mermaid-cli?tab=readme-ov-file#installation) 
 `npm install -g @mermaid-js/mermaid-cli`
+- [fzf](https://github.com/junegunn/fzf?tab=readme-ov-file#installation)
+`brew install fzf` or `sudo apt install fzf`
 
 ## Fonts
 
