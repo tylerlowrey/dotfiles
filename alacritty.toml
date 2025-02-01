@@ -1,0 +1,13 @@
+[window]
+decorations = "None"
+opacity = 0.94
+startup_mode = "Maximized"
+
+[font]
+normal = { family = "EnvyCodeR Nerd Font", style = "Regular" }
+
+[colors.primary]
+background = "#222233"
+
+[terminal]
+shell = { program = "wsl", args = ["--cd ~"]}

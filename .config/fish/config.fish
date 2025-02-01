@@ -8,6 +8,8 @@ end
 set PATH $PATH $HOME/_dev/_bin
 set PATH $PATH $HOME/_dev/_bin/google-cloud-sdk/bin
 
+set -gx LS_COLORS (vivid generate snazzy)
+
 set -g fish_prompt_pwd_dir_length 20
 
 function fish_prompt
