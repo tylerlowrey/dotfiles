@@ -8,3 +8,14 @@ vim.api.nvim_create_autocmd("FileType", {
     })
   end,
 })
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "terraform" },
+  callback = function(ev)
+    vim.lsp.start({
+      name = "terraform-ls",
+      cmd = { "terraform-ls", "serve" },
+      root_dir = vim.fs.root(ev.buf, { "main.tf" }),
+    })
+  end,
+})

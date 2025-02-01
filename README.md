@@ -6,7 +6,10 @@ Also contains a nvim-rs directory, which is a rust library using nvim-oxi to con
 
 ## How to use
 Use the install.* script to perform initial setup
+
 Use the update.* script to perform updates to an already setup environment
+
+Create a `.config/secrets/oatmeal_config.toml`
 
 ## Dependencies
 
@@ -21,6 +24,16 @@ The following dependencies need to be installed in order for everything to work 
 `npm install -g @mermaid-js/mermaid-cli`
 - [vivid][https://github.com/sharkdp/vivid?tab=readme-ov-file#installation] - for terminal theming 
 `cargo install vivid`
+- [fzf](https://github.com/junegunn/fzf?tab=readme-ov-file#installation)
+`brew install fzf` or `sudo apt install fzf`
+- [x86_64-unknown-linux-gnu](https://github.com/messense/homebrew-macos-cross-toolchains/tree/main?tab=readme-ov-file#macos-cross-toolchains) *if on MacOS*
+```
+brew tap messense/macos-cross-toolchains
+brew install x86_64-unknown-linux-gnu
+```
+- [oatmeal](https://github.com/dustinblackman/oatmeal?tab=readme-ov-file#install)
+`brew install dustinblackman/tap/oatmeal`
+>>>>>>> e333e162c8ccc7f334796a5edcf8816119d176f9
 
 ## Fonts
 

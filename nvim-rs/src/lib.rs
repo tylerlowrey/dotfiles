@@ -1,5 +1,5 @@
 use nvim_oxi::api;
-use nvim_oxi::api::opts::{CreateAutocmdOpts, OptionOpts, OptionScope, SetKeymapOpts};
+use nvim_oxi::api::opts::{OptionOpts, SetKeymapOpts};
 use nvim_oxi::api::types::{Mode, WindowBorder, WindowConfig, WindowRelativeTo, WindowStyle};
 
 #[nvim_oxi::plugin]
@@ -21,8 +21,15 @@ fn setup_keymaps() {
         &SetKeymapOpts::builder().noremap(true).build(),
     )
     .expect("Could not set remap for jj");
-}
 
+    api::set_keymap(
+        Mode::Terminal,
+        "jj",
+        "<C-\\><C-n>",
+        &SetKeymapOpts::builder().noremap(true).build(),
+    )
+    .expect("Could not set terminal remap for jj");
+}
 
 #[allow(dead_code)]
 fn floating_window() -> nvim_oxi::Result<()> {

@@ -27,5 +27,8 @@ else
     source ~/.asdf/asdf.fish
 end
 
+set -x CARGO_TARGET_X86_64_UNKNOWN_LINUX_GNU_LINKER x86_64-linux-gnu-gcc
 # Must be after PATH to rust-analyzer
 set PATH $PATH $HOME/.cargo/bin
+# TODO: Fix this so that it doesn't break when updated
+set PATH $PATH /usr/local/Cellar/x86_64-unknown-linux-gnu/13.3.0.reinstall/bin
