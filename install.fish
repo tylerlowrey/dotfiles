@@ -1,20 +1,5 @@
 #!/usr/bin/env fish
 
-rm ~/.cargo/bin/rust-analyzer
-if not type -q rust-analyzer
-    set -l operating_system (uname)
-    mkdir -p ~/_dev/_bin
-    switch (uname)
-        case Darwin
-            curl -L https://github.com/rust-lang/rust-analyzer/releases/latest/download/rust-analyzer-x86_64-apple-darwin.gz \
-                | gunzip -c - >~/_dev/_bin/rust-analyzer
-        case Linux
-            curl -L https://github.com/rust-lang/rust-analyzer/releases/latest/download/rust-analyzer-x86_64-unknown-linux-gnu.gz \
-                | gunzip -c - >~/_dev/_bin/rust-analyzer
-    end
-    chmod +x ~/_dev/_bin/rust-analyzer
-end
-
 cd nvim-rs
 cargo build --release
 cd ..
@@ -23,4 +8,17 @@ cp -rf nvim-rs/target/release/libnvim_rs.dylib $HOME/.config/nvim-rs/lua/nvim_rs
 cp -rf nvim-rs/target/release/libnvim_rs.so $HOME/.config/nvim-rs/lua/nvim_rs.so
 mkdir -p $HOME/.config/nvim
 cp -rf .config/nvim/* $HOME/.config/nvim
+mkdir -p $HOME/.config/fish
 cp -rf .config/fish/* $HOME/.config/fish
+mkdir -p $HOME/.config/niri
+cp -rf .config/niri/* $HOME/.config/niri
+mkdir -p $HOME/.config/systemd/user
+cp -rf .config/systemd/user/* $HOME/.config/systemd/user
+mkdir -p $HOME/.config/alacritty
+cp -rf .config/alacritty/* $HOME/.config/alacritty
+mkdir -p $HOME/.config/waybar
+cp -rf .config/waybar/* $HOME/.config/waybar
+mkdir -p $HOME/.config/fuzzel
+cp -rf .config/fuzzel/* $HOME/.config/fuzzel
+mkdir -p $HOME/.config/mako
+cp -rf .config/mako/* $HOME/.config/mako

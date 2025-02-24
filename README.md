@@ -19,10 +19,10 @@ The following dependencies need to be installed in order for everything to work 
 - rust standard library sources
 `rustup component add rust-src`
 - rust-analyzer (Must be somewhere on the PATH, should be installed by install.fish)
-- [asdf](https://asdf-vm.com/guide/getting-started.html)
+- [mise](https://asdf-vm.com/guide/getting-started.html)
 - [mermaid-cli](https://github.com/mermaid-js/mermaid-cli?tab=readme-ov-file#installation) 
 `npm install -g @mermaid-js/mermaid-cli`
-- [vivid][https://github.com/sharkdp/vivid?tab=readme-ov-file#installation] - for terminal theming 
+- [vivid](https://github.com/sharkdp/vivid?tab=readme-ov-file#installation) - for terminal theming 
 `cargo install vivid`
 - [fzf](https://github.com/junegunn/fzf?tab=readme-ov-file#installation)
 `brew install fzf` or `sudo apt install fzf`
@@ -33,7 +33,6 @@ brew install x86_64-unknown-linux-gnu
 ```
 - [oatmeal](https://github.com/dustinblackman/oatmeal?tab=readme-ov-file#install)
 `brew install dustinblackman/tap/oatmeal`
->>>>>>> e333e162c8ccc7f334796a5edcf8816119d176f9
 
 ## Fonts
 

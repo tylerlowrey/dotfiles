@@ -1,0 +1,11 @@
+background-color=#222233e0
+text-color=#ffffffff
+border-color=#ffffffff
+border-size=1
+border-radius=3
+font=EnvyCodeR Nerd Font 12
+width=500
+height=80
+
+[app-name="Spotify"]
+default-timeout=3000
