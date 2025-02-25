@@ -91,6 +91,7 @@ button:hover {
 #pulseaudio,
 #wireplumber,
 #custom-media,
+#custom-logout,
 #tray,
 #mode,
 #idle_inhibitor,
@@ -115,6 +116,11 @@ button:hover {
 /* If workspaces is the rightmost module, omit right margin */
 .modules-right > widget:last-child > #workspaces {
     margin-right: 0;
+}
+
+#custom-logout {
+  margin-left: 5px;
+  padding-left: 15px;
 }
 
 #clock {
@@ -223,25 +229,6 @@ label:focus {
 
 #taskbar button.active:hover {
     background-color: rgba(108, 112, 134, 0.6);
-}
-
-#pulseaudio {
-    background-color: #f1c40f;
-    color: #000000;
-}
-
-#pulseaudio.muted {
-    background-color: #90b1b1;
-    color: #2a5c45;
-}
-
-#wireplumber {
-    background-color: #fff0f5;
-    color: #000000;
-}
-
-#wireplumber.muted {
-    background-color: #f53c3c;
 }
 
 #custom-media {
