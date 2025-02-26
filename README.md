@@ -18,8 +18,10 @@ The following dependencies need to be installed in order for everything to work 
 - [rust + cargo](https://rustup.rs/) 
 - rust standard library sources
 `rustup component add rust-src`
-- rust-analyzer (Must be somewhere on the PATH, should be installed by install.fish)
 - [mise](https://asdf-vm.com/guide/getting-started.html)
+- rust-analyzer (Must be somewhere on the PATH)
+`pacman -S rust-analyzer` or `brew install rust-analyzer`
+- [asdf](https://asdf-vm.com/guide/getting-started.html)
 - [mermaid-cli](https://github.com/mermaid-js/mermaid-cli?tab=readme-ov-file#installation) 
 `npm install -g @mermaid-js/mermaid-cli`
 - [vivid](https://github.com/sharkdp/vivid?tab=readme-ov-file#installation) - for terminal theming 
