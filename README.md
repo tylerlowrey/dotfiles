@@ -35,6 +35,8 @@ brew install x86_64-unknown-linux-gnu
 ```
 - [oatmeal](https://github.com/dustinblackman/oatmeal?tab=readme-ov-file#install)
 `brew install dustinblackman/tap/oatmeal`
+- [eclipse jdtls](https://github.com/eclipse-jdtls/eclipse.jdt.ls#installation) for java language server for neovim. Should be installed into the following directory: `~/.local/opt/jdtls`
+- [kotlin-language-server](https://github.com/fwcd/kotlin-language-server)
 
 ## Fonts
 

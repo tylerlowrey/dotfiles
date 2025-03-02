@@ -16,4 +16,7 @@ return {
       config_file = "~/.config/secrets/oatmeal_config.toml",
     },
   },
+  {
+    "mfussenegger/nvim-jdtls",
+  },
 }
