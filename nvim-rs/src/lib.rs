@@ -11,6 +11,8 @@ fn nvim_rs() -> nvim_oxi::Result<()> {
     api::set_option_value("tabstop", 4, &option_value_settings)?;
     let option_value_settings = OptionOpts::builder().build();
     api::set_option_value("shiftwidth", 4, &option_value_settings)?;
+    let option_value_settings = OptionOpts::builder().build();
+    api::set_option_value("smartindent", false, &option_value_settings)?;
 
     Ok(())
 }
