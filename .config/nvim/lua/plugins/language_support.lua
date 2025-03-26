@@ -6,6 +6,7 @@ return {
         "stylua",
         "shfmt",
         "html-lsp",
+        "terraform-ls",
       },
     },
   },
