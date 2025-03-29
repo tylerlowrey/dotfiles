@@ -7,6 +7,7 @@ return {
         "shfmt",
         "html-lsp",
         "terraform-ls",
+        "wgsl-analyzer",
       },
     },
   },
