@@ -12,7 +12,15 @@ fn nvim_rs() -> nvim_oxi::Result<()> {
     let option_value_settings = OptionOpts::builder().build();
     api::set_option_value("shiftwidth", 4, &option_value_settings)?;
     let option_value_settings = OptionOpts::builder().build();
-    api::set_option_value("smartindent", false, &option_value_settings)?;
+    api::set_option_value("expandtab", true, &option_value_settings)?;
+    let option_value_settings = OptionOpts::builder().build();
+    api::set_option_value("softtabstop", 4, &option_value_settings)?;
+    let option_value_settings = OptionOpts::builder().build();
+    api::set_option_value("smartindent", true, &option_value_settings)?;
+    let option_value_settings = OptionOpts::builder().build();
+    api::set_option_value("autoindent", true, &option_value_settings)?;
+    let option_value_settings = OptionOpts::builder().build();
+    api::set_option_value("smarttab", true, &option_value_settings)?;
 
     Ok(())
 }

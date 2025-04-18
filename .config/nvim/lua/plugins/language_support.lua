@@ -51,6 +51,7 @@ return {
         "terraform",
         "hcl",
         "rust",
+        "wgsl_bevy",
         "ron",
         "go",
         "gomod",

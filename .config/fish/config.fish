@@ -12,6 +12,7 @@ set PATH $PATH $HOME/.cargo/bin
 set PATH $PATH /usr/local/Cellar/x86_64-unknown-linux-gnu/13.3.0.reinstall/bin
 set PATH $PATH $HOME/.local/bin
 set PATH $PATH $HOME/go/bin
+set PATH $PATH $HOME/.rd/bin
 
 set -gx LS_COLORS (vivid generate snazzy)
 

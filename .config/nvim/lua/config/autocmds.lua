@@ -21,11 +21,9 @@ vim.api.nvim_create_autocmd("FileType", {
 vim.api.nvim_create_autocmd("FileType", {
   pattern = { "terraform" },
   callback = function(ev)
-    vim.lsp.start({
-      name = "terraform-ls",
-      cmd = { "terraform-ls", "serve" },
-      root_dir = vim.fs.root(ev.buf, { "main.tf" }),
-    })
+    vim.opt.tabstop = 4
+    vim.opt.softtabstop = 2
+    vim.opt.shiftwidth = 2
   end,
 })
 
@@ -40,5 +38,13 @@ vim.api.nvim_create_autocmd("FileType", {
   pattern = "lua",
   callback = function()
     vim.cmd("TSDisable indent")
+  end,
+})
+
+-- force .tf files to always be terraform
+vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
+  pattern = "*.tf",
+  callback = function()
+    vim.bo.filetype = "terraform"
   end,
 })
