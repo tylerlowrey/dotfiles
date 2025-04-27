@@ -5,6 +5,8 @@ function stringcmp --description "Compares two string arguments for equality"
         return 1
     end
 
+    echo "First String: $argv[1]"
+    echo "Second String: $argv[2]"
     if [ "$argv[1]" = "$argv[2]" ]
         echo "The strings are the same"
     else

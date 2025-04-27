@@ -27,11 +27,10 @@ return {
     version = "^5",
     lazy = false,
   },
-  -- { import = "lazyvim.plugins.extras.lang.typescript" },
-  -- add more treesitter parsers
   {
     "nvim-treesitter/nvim-treesitter",
     opts = {
+      indent = { enable = false },
       ensure_installed = {
         "bash",
         "html",
