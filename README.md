@@ -39,6 +39,8 @@ brew install x86_64-unknown-linux-gnu
 - [kotlin-language-server](https://github.com/fwcd/kotlin-language-server)
 - [fd](https://github.com/sharkdp/fd?tab=readme-ov-file#installation)
 `brew install fd` or `pacman -S fd`
+- [java-debug-server](https://github.com/microsoft/java-debug): Needed for java debugging. Download source and compile using mvn. Install into 
+
 
 ## Fonts
 

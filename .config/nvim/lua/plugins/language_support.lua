@@ -11,11 +11,11 @@ return {
       },
     },
   },
-  -- This is necessary in order for rustaceanvim to work with LazyVim + mason. See https://github.com/mrcjkb/rustaceanvim/blob/master/doc/mason.txt
   {
     "neovim/nvim-lspconfig",
     opts = {
       setup = {
+        -- This is necessary in order for rustaceanvim to work with LazyVim + mason. See https://github.com/mrcjkb/rustaceanvim/blob/master/doc/mason.txt
         rust_analyzer = function()
           return true
         end,
