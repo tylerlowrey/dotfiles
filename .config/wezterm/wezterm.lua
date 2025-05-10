@@ -31,5 +31,7 @@ config.window_padding = {
 	top = 0,
 	bottom = 0,
 }
+-- Disable hardware acceleration because of issues with docking station
+config.front_end = "Software"
 
 return config
