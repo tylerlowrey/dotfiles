@@ -1,3 +1,5 @@
+# This file is outdated
+
 cd nvim-rs
 cargo build --release
 cd ..
