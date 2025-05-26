@@ -15,21 +15,3 @@ end, { desc = "Open Rust Docs" })
 wk.add({
   { "<leader>o", group = "Other options", icon = { icon = "󰍻", color = "grey" } },
 })
-
-vim.keymap.set("n", "<leader>oo", function()
-  local ok, dbee = pcall(require, "dbee")
-  if ok then
-    dbee.open()
-  else
-    print("nvim-dbee plugin not available or failed to load.")
-  end
-end, { desc = "Open DBee UI", noremap = true, silent = true })
-
-vim.keymap.set("n", "<leader>oc", function()
-  local ok, dbee = pcall(require, "dbee")
-  if ok then
-    dbee.close()
-  else
-    print("nvim-dbee plugin not available or failed to load.")
-  end
-end, { desc = "Close DBee UI", noremap = true, silent = true })
