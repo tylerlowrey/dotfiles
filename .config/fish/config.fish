@@ -8,11 +8,10 @@ end
 set PATH $PATH $HOME/_dev/_bin
 set PATH $PATH $HOME/_dev/_bin/google-cloud-sdk/bin
 set PATH $PATH $HOME/.cargo/bin
-# TODO: Fix this so that it doesn't break when updated
-set PATH $PATH /usr/local/Cellar/x86_64-unknown-linux-gnu/13.3.0.reinstall/bin
 set PATH $PATH $HOME/.local/bin
 set PATH $PATH $HOME/go/bin
 set PATH $PATH $HOME/.rd/bin
+set PATH $PATH $HOME/.config/jetbrains/scripts
 
 set -gx LS_COLORS (vivid generate snazzy)
 
