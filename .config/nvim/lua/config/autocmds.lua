@@ -41,6 +41,16 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "rust",
+  callback = function()
+    vim.g.rust_recommended_style = false
+    vim.cmd("TSDisable indent")
+    vim.opt_local.smartindent = false
+    vim.opt_local.autoindent = false
+  end,
+})
+
 -- force .tf files to always be terraform
 vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
   pattern = "*.tf",
