@@ -18,7 +18,7 @@ The following dependencies need to be installed in order for everything to work 
 - [rust + cargo](https://rustup.rs/) 
 - rust standard library sources
 `rustup component add rust-src`
-- [mise](https://asdf-vm.com/guide/getting-started.html)
+- [mise](https://mise.jdx.dev/installing-mise.html)
 - rust-analyzer (Must be somewhere on the PATH)
 `pacman -S rust-analyzer` or `brew install rust-analyzer`
 - [asdf](https://asdf-vm.com/guide/getting-started.html)
@@ -40,7 +40,13 @@ brew install x86_64-unknown-linux-gnu
 - [fd](https://github.com/sharkdp/fd?tab=readme-ov-file#installation)
 `brew install fd` or `pacman -S fd`
 - [java-debug-server](https://github.com/microsoft/java-debug): Needed for java debugging. Download source and compile using mvn. Install into 
-
+- [ripgrep](https://github.com/BurntSushi/ripgrep): Needed for text search with lazy vim
+`cargo install ripgrep`
+- [pulumi](https://www.pulumi.com/docs/iac/download-install/)
+- [wasmtime](https://docs.wasmtime.dev/cli-install.html)
+`cargo install wasmtime-cli`
+`rustup target add wasm32-wasip2`
+`sudo apt install wabt`
 
 ## Fonts
 

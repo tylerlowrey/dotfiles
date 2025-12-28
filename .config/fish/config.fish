@@ -12,6 +12,7 @@ set PATH $PATH $HOME/.local/bin
 set PATH $PATH $HOME/go/bin
 set PATH $PATH $HOME/.rd/bin
 set PATH $PATH $HOME/.config/jetbrains/scripts
+set PATH $PATH $HOME/.pulumi/bin
 
 set -gx LS_COLORS (vivid generate snazzy)
 

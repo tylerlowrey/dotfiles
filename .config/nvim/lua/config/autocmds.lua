@@ -35,17 +35,9 @@ vim.api.nvim_create_autocmd("FileType", {
 })
 
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = "lua",
-  callback = function()
-    vim.cmd("TSDisable indent")
-  end,
-})
-
-vim.api.nvim_create_autocmd("FileType", {
   pattern = "rust",
   callback = function()
     vim.g.rust_recommended_style = false
-    vim.cmd("TSDisable indent")
     vim.opt_local.smartindent = false
     vim.opt_local.autoindent = false
   end,

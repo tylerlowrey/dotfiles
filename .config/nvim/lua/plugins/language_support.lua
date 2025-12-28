@@ -1,6 +1,6 @@
 return {
   {
-    "williamboman/mason.nvim",
+    "mason-org/mason.nvim",
     opts = {
       ensure_installed = {
         "stylua",
@@ -22,11 +22,6 @@ return {
         end,
       },
     },
-  },
-  {
-    "mrcjkb/rustaceanvim",
-    version = "^5",
-    lazy = false,
   },
   {
     "nvim-treesitter/nvim-treesitter",
