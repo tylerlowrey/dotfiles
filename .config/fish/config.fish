@@ -29,4 +29,8 @@ end
 
 set -x CARGO_TARGET_X86_64_UNKNOWN_LINUX_GNU_LINKER x86_64-linux-gnu-gcc
 # Must be after PATH to rust-analyzer
-~/.local/bin/mise activate fish | source
+if type -q mise
+    mise activate fish | source
+else
+    ~/.local/bin/mise activate fish | source
+end
