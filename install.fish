@@ -26,3 +26,4 @@ mkdir -p $HOME/.config/wezterm
 cp -rf .config/wezterm/* $HOME/.config/wezterm
 mkdir -p $HOME/.config/tio
 cp -rf .config/tio/* $HOME/.config/tio
+cp .ideavimrc $HOME

@@ -1,12 +1,23 @@
-syntax on
-set tabstop=4
-set shiftwidth=4
-set softtabstop=0 noexpandtab
-set background=dark
-set backspace=indent,eol,start
-set number
-
+" Set space as the leader key
+let mapleader = " "
 inoremap jj <ESC>
 
-highlight LineNr ctermfg=white ctermbg=darkgrey
-highlight Comment term=bold ctermfg=5 guifg=#E178E4
+sethandler <C-S-o> n:vim
+sethandler <leader>wl n:vim
+
+" Set shift+H and shift+L to navigate left and right between editor tabs
+nmap H <Action>(PreviousTab)
+nmap L <Action>(NextTab)
+
+set NERDTree
+" Focus the project files window
+nmap <leader>wh <Action>(ActivateProjectToolWindow)
+" Focus the editor window
+nmap <leader>wl <Action>(SelectInProjectView)
+" Close the current editor tab
+nmap <leader>bd <Action>(CloseContent)
+" Back navigation 
+nmap <C-o> <Action>(Back)
+" Forward navigation
+nmap <C-S-o> <Action>(Forward)
+
